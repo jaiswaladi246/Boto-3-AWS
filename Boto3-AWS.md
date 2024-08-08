@@ -2,16 +2,8 @@
 
 1. **Ensure AWS CLI is configured**:
    ```bash
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-
-sudo apt install unzip
-
-unzip awscliv2.zip
-
-sudo ./aws/install
-
-aws configure
- ```
+   aws configure
+   ```
 
 2. **Create a Virtual Environment and Install Boto3**:
    ```bash
@@ -29,7 +21,7 @@ aws configure
    ```
 
 ## Script To Create The Resource
-
+```python
 import boto3
 
 # Initialize a session using Amazon EC2
@@ -122,7 +114,7 @@ for instance in instances:
     print(f'Public DNS: {instance.public_dns_name}')
     print(f'Instance Type: {instance.instance_type}')
 
-
+```
 ## Explaination
 
 The provided script is a comprehensive example of how to automate the creation of AWS infrastructure using Boto3, the AWS SDK for Python. Here's a step-by-step explanation of what each part of the script does:
