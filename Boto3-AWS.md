@@ -1,7 +1,7 @@
 # Steps to Execute the Script:
 
 1. **Ensure AWS CLI is configured**:
-   ```bash
+```
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
 sudo apt install unzip
@@ -11,7 +11,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 aws configure   
-
+```
 
 2. **Create a Virtual Environment and Install Boto3**:
    ```bash
