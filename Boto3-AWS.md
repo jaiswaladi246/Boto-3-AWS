@@ -11,7 +11,7 @@ unzip awscliv2.zip
 sudo ./aws/install
 
 aws configure   
-   ```
+
 
 2. **Create a Virtual Environment and Install Boto3**:
    ```bash
